@@ -1,0 +1,10 @@
+CREATE DATABASE registro;
+USE registro;
+CREATE TABLE usuarios (
+	id INT NOT NULL AUTO_INCREMENT,
+	nombre VARCHAR(30) NOT NULL,
+	apellido VARCHAR(30) NOT NULL,
+	email VARCHAR(200) NOT NULL,
+	password VARCHAR(50) NOT NULL,
+	PRIMARY KEY(id)
+);

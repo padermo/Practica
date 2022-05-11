@@ -1,0 +1,94 @@
+/*UTILIDADES*/
+:root{
+    --colorPrincipal: #FAFAFA;
+    --colorSecundario: #D8D8D8;
+    --colorFuente: #585858;
+    --colorHover: #2E2E2E;
+    --fuentePrincipal: font-family: 'Radio Canada', sans-serif;
+}
+
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+
+/*-------------------------------------------------------------------------------------------------------------------------------*/
+/*GLOBALES*/
+h1{
+    font-family: var(--fuentePrincipal);
+    color: var(--colorHover);
+    font-size: 3rem;
+}
+body{
+    background-color: var(--colorPrincipal);
+}
+button{
+    margin: .2rem;
+}
+footer{
+    display: block;
+}
+div{
+    display: block;
+}
+
+
+/*-------------------------------------------------------------------------------------------------------------------------------*/
+/**CALCULADORA**/
+/*NAVEGACION*/
+.navHead{
+    background-color: var(--colorSecundario);
+}
+.navHead--contenido{
+    display: flex;
+    justify-content: center;
+    column-gap: 1rem;
+}
+.navHead--contenido--links{
+    font-family: var(--fuentePrincipal);
+    font-size: 1.4rem;
+    text-decoration: none;
+    color: var(--colorFuente);
+    
+}
+.navHead--contenido--links:hover{
+    color: var(--colorHover);
+}
+
+
+/*-------------------------------------------------------------------------------------------------------------------------------*/
+/**CALCULADORA**/
+/*BODY*/
+.navBody--title{
+    display:grid;
+    justify-content: center;
+    margin: 2rem;
+}
+.navBody--datos{
+    display:grid;
+    justify-content: center;
+}
+.navBody--datos--numero{
+    height: 2.25rem;
+    width: 20rem;
+    margin: .2rem;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+}
+
+
+/*-------------------------------------------------------------------------------------------------------------------------------*/
+/**LOGIN**/
+/*BUTTOMS*/
+.enviar{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 1rem;
+    margin: 1rem;
+}
